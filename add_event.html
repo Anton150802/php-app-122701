@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добавяне на събитие</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Добавяне на събитие</h1>
+    <form action="add_event.php" method="POST">
+        <label for="title">Заглавие на събитието:</label><br>
+        <input type="text" id="title" name="title" required><br><br>
+
+        <label for="description">Описание:</label><br>
+        <textarea id="description" name="description"></textarea><br><br>
+
+        <label for="event_date">Дата:</label><br>
+        <input type="date" id="event_date" name="event_date" required><br><br>
+
+        <label for="event_time">Час:</label><br>
+        <input type="time" id="event_time" name="event_time" required><br><br>
+
+        <button type="submit">Добави събитие</button>
+    </form>
+</body>
+</html>
